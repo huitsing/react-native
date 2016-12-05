@@ -258,6 +258,7 @@ static UIImage *RCTResizeImageIfNeeded(UIImage *image,
             }
             [tasksToRemove addObject:task];
             self->_activeTasks--;
+            [task cancel];
           }
           break;
       }
